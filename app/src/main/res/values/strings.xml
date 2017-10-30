@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BetterAndroid</string>
+
+    <string name="dt2s_lock_screen_title">Double tap to sleep lock screen</string>
+    <string name="dt2s_lock_screen_summary">Define if the device should go the sleep on double taps</string>
+
+    <string name="dt2s_status_bar_title">Double tap to sleep status bar</string>
+    <string name="dt2s_status_bar_summary">Define if the device should go the sleep on double taps</string>
+
+    <string name="quick_pulldown_title">Quick Pulldown</string>
+    <string name="quick_pulldown_summary">Define if quick pulldown should be enabled.</string>
+</resources>

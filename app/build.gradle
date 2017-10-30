@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.ivianuu.betterandroid"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    // Lambda support
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // Android Support
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:preference-v14:26.1.0'
+
+    // Kotlin
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:1.2.0-beta-88"
+
+    // World Readable Prefs
+    implementation 'com.github.IVIanuu:WorldReadablePrefs:2304958b62'
+
+    // Xposed
+    implementation 'com.github.IVIanuu:XposedExtensions:5373c19715'
+    provided 'de.robv.android.xposed:api:82'
+}

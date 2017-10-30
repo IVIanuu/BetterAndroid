@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.preference.CheckBoxPreference
+        android:defaultValue="false"
+        android:key="dt2s_lock_screen"
+        android:summary="@string/dt2s_lock_screen_summary"
+        android:title="@string/dt2s_lock_screen_title" />
+
+    <android.support.v7.preference.CheckBoxPreference
+        android:defaultValue="false"
+        android:key="dt2s_status_bar"
+        android:summary="@string/dt2s_status_bar_summary"
+        android:title="@string/dt2s_status_bar_title" />
+
+    <android.support.v7.preference.CheckBoxPreference
+        android:defaultValue="false"
+        android:key="quick_pulldown"
+        android:summary="@string/quick_pulldown_summary"
+        android:title="@string/quick_pulldown_title" />
+
+</android.support.v7.preference.PreferenceScreen>
